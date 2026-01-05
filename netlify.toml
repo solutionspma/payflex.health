@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+  command = "echo 'Static site - no build required'"
+
+[[redirects]]
+  from = "/onboarding/*"
+  to = "/onboarding/:splat"
+  status = 200
