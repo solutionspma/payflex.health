@@ -1,29 +1,36 @@
 /* ============================================
-   PHAR PAY — Premium Landing Page Styles
+   PAYFLEX HEALTH — Hospital-Grade Medical Platform
    ============================================ */
 
 /* Variables */
 :root {
-  /* Medical-Grade Color System */
-  --medical-blue: #0B5ED7;
-  --navy-dark: #0A2540;
-  --gold-accent: #D4AF37;
-  --bg-light: #F8FAFC;
-  --text-dark: #0F172A;
+  /* PayFlex Health - Hospital-grade Red/Blue/White */
+  --pfh-red: #b11226;
+  --pfh-blue: #0b3c5d;
+  --pfh-white: #ffffff;
+  --pfh-gray: #f4f6f8;
+  --pfh-dark: #1a1a1a;
   
-  /* Legacy mappings for compatibility */
-  --color-black: #0A2540;
-  --color-charcoal: #0F3156;
-  --color-charcoal-light: #1A4068;
-  --color-gold: #D4AF37;
-  --color-gold-light: #E0C45C;
-  --color-gold-dark: #B8962F;
-  --color-burgundy: #722f37;
-  --color-burgundy-light: #8b3a44;
-  --color-white: #ffffff;
-  --color-gray-100: #F8FAFC;
-  --color-gray-300: #CBD5E1;
-  --color-gray-500: #64748B;
+  /* Semantic mappings */
+  --color-primary: var(--pfh-red);
+  --color-secondary: var(--pfh-blue);
+  --color-background: var(--pfh-white);
+  --color-surface: var(--pfh-gray);
+  --color-text: var(--pfh-dark);
+  
+  /* Legacy compatibility */
+  --color-black: var(--pfh-dark);
+  --color-charcoal: var(--pfh-blue);
+  --color-charcoal-light: #1a3a52;
+  --color-gold: var(--pfh-red);
+  --color-gold-light: #d41f35;
+  --color-gold-dark: #8e0e1d;
+  --color-burgundy: var(--pfh-red);
+  --color-burgundy-light: #c91d31;
+  --color-white: var(--pfh-white);
+  --color-gray-100: var(--pfh-gray);
+  --color-gray-300: #cbd5e1;
+  --color-gray-500: #64748b;
   --color-gray-700: #334155;
   
   --font-serif: 'Playfair Display', Georgia, serif;
