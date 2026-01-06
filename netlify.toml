@@ -3,6 +3,36 @@
   command = "echo 'Static site - no build required'"
 
 [[redirects]]
+  from = "/apply"
+  to = "/login.html"
+  status = 301
+
+[[redirects]]
+  from = "/signup"
+  to = "/login.html"
+  status = 301
+
+[[redirects]]
+  from = "/register"
+  to = "/login.html"
+  status = 301
+
+[[redirects]]
+  from = "/customer-apply.html"
+  to = "/login.html"
+  status = 301
+
+[[redirects]]
+  from = "/provider-apply.html"
+  to = "/login.html"
+  status = 301
+
+[[redirects]]
+  from = "/providers/apply"
+  to = "/login.html"
+  status = 301
+
+[[redirects]]
   from = "/onboarding/*"
   to = "/onboarding/:splat"
   status = 200

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — PayFlex Health</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .login-page {
+      min-height: 100vh;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .login-container {
+      max-width: 420px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 48px 40px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+    }
+    
+    .login-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    
+    .login-header h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    
+    .login-header p {
+      color: #6a6a6a;
+      font-size: 14px;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 15px;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: #c41e3a;
+      box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
+    }
+    
+    .btn-login {
+      width: 100%;
+      padding: 14px;
+      background: #c41e3a;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .btn-login:hover {
+      background: #a01829;
+    }
+    
+    .login-footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #6a6a6a;
+    }
+    
+    .login-footer a {
+      color: #c41e3a;
+      text-decoration: none;
+    }
+    
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 24px;
+      color: #6a6a6a;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    
+    .back-link:hover {
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-container">
+      <div class="login-header">
+        <h1>Welcome Back</h1>
+        <p>Log in to access your PayFlex account</p>
+      </div>
+      
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </div>
+        
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="••••••••">
+        </div>
+        
+        <button type="submit" class="btn-login">Log In</button>
+      </form>
+      
+      <div class="login-footer">
+        <a href="https://payflexsystems.com/forgot-password">Forgot password?</a>
+      </div>
+      
+      <a href="index.html" class="back-link">← Back to home</a>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // TODO: Implement actual authentication
+      alert('Authentication endpoint not yet configured. Contact support.');
+    });
+  </script>
+</body>
+</html>
